@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #040431;
+	transition: 0.7s;
+	z-index: 100;
+}
+header .navegacion{
+	display: flex;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	align-items: center;
+}
+.navegacion  .diseno{
+	width: 40%;
+}
+.navegacion .opt{
+	width: 20%;
+}
+header .navegacion .letra{
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	padding-top: 30px;
+	transition: all 0.8s ease 0s;
+}
+header .navegacion .letra:hover{
+	background: #bd890f;
+	height: 40px;
+}
+.abajo{
+	background: white;
+	transition: 0.7s;
+	height: 60px;
+	padding-top: 10px;
+}
+header .navegacion .letracolor{
+	color: #040431;
+}
+header .navegacion .letracolor:hover{
+	color: white;
+}
+main{
+	padding-top: 100px;
+	background: #040431;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+.ovalo{
+	position: absolute;
+	height: 1000px;
+	width: 200%;
+	background: white;
+	border-radius: 50%/50%;
+	left: -49%;
+	top: -10%;
+	z-index: -2;
+}
+main #mod-titulo{
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
+}
+main .dwam{
+	display: flex;
+	align-items: center;
+}
+main .dwam .contenedor-dwam,
+main .dwam .img_dwam{
+	width: 50%;
+	text-align: center;
+}
+main .dwam .img_dwam{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+main .dwam .contenedor-dwam p{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+main .dwam .img_dwam .contenedor-img{
+	width: 80%;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top: 5px solid #040431;
+	border-left: 5px solid #040431;
+	border-bottom: 5px solid blue;
+	border-right: 5px solid blue;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+main .dwam .img_dwam .contenedor-img img{
+	width: 100%;
+	height: 100%;
+}
+main #tabla-didacticas{
+	width: 100%;
+	margin-top: 25px;
+}
+main #tabla-didacticas .titulo-tabla{
+	color: white;
+	margin-bottom: 30px;
+}
+main #tabla-didacticas .categoria-tabla{
+	background: #ff5e00;
+	color: white;
+}
+main #tabla-didacticas .tabla-unidades,
+main #tabla-didacticas .tabla-empleabilidad{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	margin-bottom: 30px;
+	border-collapse: separate;
+}
+main #tabla-didacticas .tabla-empleabilidad{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+main .datos-formativos{
+	display: flex;
+	overflow: hidden;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+main .datos-formativos .docentes-mod{
+	width: 30%;
+	padding-top: 49px;
+}
+main .datos-formativos .docentes-mod .docentes,
+main .datos-formativos .efsrt .experiencias{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0,51,140,0.5);
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+main .datos-formativos .docentes-mod .docentes .datos-maestros{
+	z-index: 1000;
+}
+main .datos-formativos .docentes-mod .docentes .datos-maestros ul{
+	list-style-type: upper-roman;
+	list-style-position: inside;
+}
+main .datos-formativos .docentes-mod .docentes .acceso a{
+	z-index: 100;
+	color: white;
+}
+.circulos{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -5;
+}
+.circle1
+{
+	background: #bdbde9;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	z-index: -5;
+	position: absolute;
+	bottom: 100px;
+	left: -10px;
+	opacity: 0.5;
+}
+.circle2
+{
+	background: #bdbde9;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	z-index: -5;
+	position: absolute;
+	left: 200px;
+	top: 61px;
+	opacity: 0.5;
+}
+.circle3
+{
+	background: #bdbde9;
+	height: 290px;
+	width: 290px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -5;
+	right: 76px;
+	top: -89px;
+	opacity: 0.5;
+}
+main .datos-formativos h2
+{
+	text-align: center;
+	color: #bd890f;
+	background: white;
+	border-radius: 10px;
+}
+main .datos-formativos h3{
+	color: #bd890f;
+}
+main .datos-formativos p{
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+main .datos-formativos ul{
+	padding-top: 10px;
+	color: white;
+	padding-bottom: 20px;
+}
+.fondo-datos{
+	position: absolute;
+	height: 334px;
+	width: 100%;
+	background: white;
+	border-radius: 8%/42%;
+	left: -67%;
+	top: 80%;
+	z-index: -6;
+}
+main .datos-formativos .efsrt{
+	width: 70%;
+}
+main .datos-formativos .mod2-efsrt{
+	height: 315px;
+}
+footer .datos{
+	display: flex;
+	margin-top: 20px;
+}
+footer .datos .contacto,
+footer .datos .contenedor-ubicacion{
+	width: 50%;
+}
+footer .datos .contacto ul,
+footer .datos .contenedor-ubicacion .ubicacion ul{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer .datos .contacto .contacto-subtitulo,
+footer .datos .contenedor-ubicacion .ubicacion-subtitulo{
+	text-align: center;
+	background: #040431;
+	color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer .datos .contenedor-ubicacion .logo{
+	display: flex;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	margin-top: 20px;
+}
+footer .datos .contenedor-ubicacion .logo h3{
+	font-size: 150%;
+	margin-left: 10px;
+	font-family: algerian;
+	text-align: center;
+}
+footer .datos .contenedor-ubicacion .logo img{
+	height: 100px;
+	width: 100px;
+}
+footer .copy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .copy div{
+	margin-left: 10px;
+}
+footer .copy div img{
+	height: 30px;
+	width: 30px;
+}
