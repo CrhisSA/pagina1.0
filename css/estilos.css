@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat+Alternates:ital,wght@1,900&family=Montserrat:ital,wght@1,900&display=swap');
 *{
 	margin: 0;
-}
+} 
 body::-webkit-scrollbar{
 	width: 10px;
 }
@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb{
 	width: 100%;
 	background: #fff;
 	transition: 0.7s;
-	height: 80px;
+	height: 70px;
 	z-index: 1000;
 }
 .navegacion .contenedor-opt{
@@ -29,11 +29,10 @@ body::-webkit-scrollbar-thumb{
 	list-style: none;
 	width: 94%;
 	align-items: center;
-	text-align: center;
 }
 .navegacion .contenedor-opt li a{
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 .abajo{
 	padding-top: 3px;
@@ -48,7 +47,7 @@ body::-webkit-scrollbar-thumb{
 }
 .navegacion .enlace-logo{
 	width: 6%;
-	height: 80px;
+	height: 70px;
 	margin-left: 2%;
 }
 .navegacion .enlace-logo .contenedor-img,
@@ -86,72 +85,57 @@ body::-webkit-scrollbar-thumb{
 	line-height: 60px;
 }
 header{
-	background-image: url(../imagenes/dpw/banner.png);
+	background-image: url(../imagenes/dpw/banner-1.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 90vh;
 	margin-top: 80px;
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-areas: "espacio-banner contenedor-banner";
+	grid-template-columns: 35% 30% 35%;
+	grid-template-areas: "contenedor-banner1 contenedor-banner2 contenedor-banner3";
 }
-header .filtro{
-	height: 100%;
+header .contenedor-banner3{
+	background: rgba(70,78,104,0.5);
 	width: 100%;
-	left: 0;
-	top: 10px;
-	position: absolute;
-	background: radial-gradient(circle, rgba(193,131,7,0) 61%, rgba(14,14,111,1) 100%);
+	height: 100%;
 }
-.contenedor-banner{
-	background: rgba(4,4,49,.5);
-	padding: 30px;
-	margin: 40px;
+.contenedor-banner3 .contenedor-instituto{
+	background: #040431;
+	margin-top: 30px;
 	text-align: center;
-	border-radius: 20px;
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	z-index: 100;
-}
-.contenedor-banner .contenedor-instituto{
- 	background: linear-gradient(0deg, rgba(193,226,227,1) 0%, rgba(14,14,111,1) 100%);
- 	padding: 10px;
- 	font-size: 1em;
- 	margin-bottom: 30px;
-}
-.contenedor-banner .contenedor-instituto .subtitulo-instituto{
 	color: white;
+	padding: 20px;
 }
-.contenedor-banner h3{
-	font-size: 2em;
-	color: white;
+.contenedor-banner3 .subtitulo-instituto{
+	font-size: 1em;
 	margin-bottom: 10px;
 }
-.contenedor-banner .contenedor-instituto .subtitulo-nombre{
-	color: #c18307;
+.contenedor-banner3 .subtitulo-nombre{
+	font-family: Algerian;
+	font-size: 1.7em;
 }
-.contenedor-banner .titulo-diseno{
+.contenedor-banner3 h3{
+	background: #040431;
+	margin-left: 55%;
+	color: #FFF;
+	padding: 5px;
+	text-align: left;
+	margin-top: 25px;
+}
+.contenedor-banner3 .titulo-diseno{
+	text-align: center;
+	font-size: 2.5em;
+	font-family: Mochiy Pop P One;
 	color: #040431;
 	-webkit-text-stroke: 2px white;
-	font-size: 3em;
-	font-family: "Mochiy Pop P One",sans-serif;
+	margin-top: 10px;
 }
-.contenedor-banner .frontend{
-	font-size: 1.7em;
-	font-family: "Mochiy Pop P One",sans-serif;
-	color: #040431;
-	-webkit-text-stroke: 1px white;
-}
-.contenedor-banner .backend{
-	font-size: 1.7em;
-	font-family: "Mochiy Pop P One",sans-serif;
-	color: #fff;
-	-webkit-text-stroke: 1px #040431;
-}
-.contenedor-banner .ciudad{
+.contenedor-banner3 .lema{
 	margin-top: 30px;
+	text-align: center;
+	color: white;
+	font-size: 1.8em;
 }
 main{
 	border-top:10px double black;

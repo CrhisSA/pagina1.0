@@ -1,50 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat+Alternates:ital,wght@1,900&family=Montserrat:ital,wght@1,900&display=swap');
 *{
 	margin: 0;
 }
-header{
+body::-webkit-scrollbar{
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+	background: #000;
+	border-radius: 4px;
+}
+.navegacion{
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #040431;
+	background: #fff;
 	transition: 0.7s;
-	z-index: 100;
+	height: 70px;
+	z-index: 1000;
 }
-header .navegacion{
+.navegacion .contenedor-opt{
 	display: flex;
-	width: 100%;
-	text-align: center;
-	height: 50px;
+	justify-content: space-around;
+	list-style: none;
+	width: 94%;
 	align-items: center;
+	text-align: center;
 }
-.navegacion  .diseno{
-	width: 40%;
-}
-.navegacion .opt{
-	width: 20%;
-}
-header .navegacion .letra{
+.navegacion .contenedor-opt li a{
 	text-decoration: none;
-	color: white;
-	height: 100%;
-	padding-top: 30px;
-	transition: all 0.8s ease 0s;
-}
-header .navegacion .letra:hover{
-	background: #bd890f;
-	height: 40px;
+	font-size: 1em;
 }
 .abajo{
-	background: white;
-	transition: 0.7s;
-	height: 60px;
-	padding-top: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: #001b4e;
 }
-header .navegacion .letracolor{
-	color: #040431;
+.letracolor{
+	color: #fff;
 }
-header .navegacion .letracolor:hover{
-	color: white;
+.navegacion .contenedor-opt li{
+	padding: 10px;
+}
+.navegacion .enlace-logo{
+	width: 6%;
+	height: 70px;
+	margin-left: 2%;
+}
+.navegacion .enlace-logo .contenedor-img,
+.navegacion .enlace-logo .contenedor-img img{
+	width: 100%;
+	height: 100%;
+}
+.fondoon{
+	background: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.fondooff{
+	background: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraon{
+	color: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraoff{
+	color: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.nav-toggle{
+	display: none;
+	color: blue;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
 }
 main{
 	padding-top: 100px;
@@ -110,7 +149,7 @@ main #tabla-didacticas .titulo-tabla{
 	margin-bottom: 30px;
 }
 main #tabla-didacticas .categoria-tabla{
-	background: #ff5e00;
+	background: #008fd5;
 	color: white;
 }
 main #tabla-didacticas .tabla-unidades,
@@ -206,12 +245,12 @@ main .datos-formativos .docentes-mod .docentes .acceso a{
 main .datos-formativos h2
 {
 	text-align: center;
-	color: #bd890f;
+	color: #040431;
 	background: white;
 	border-radius: 10px;
 }
 main .datos-formativos h3{
-	color: #bd890f;
+	color: #040431;
 }
 main .datos-formativos p{
 	color: white;
@@ -232,6 +271,9 @@ main .datos-formativos ul{
 	left: -67%;
 	top: 80%;
 	z-index: -6;
+}
+main .datos-formativos .efsrt .experiencias span a{
+	color: #fff;
 }
 main .datos-formativos .efsrt{
 	width: 70%;

@@ -105,18 +105,18 @@ function aparecerpde(){
 		}
 	}
 }
-document.querySelectorAll('.submenu .lista-submenu li').forEach((elemento)=>{
-	elemento.addEventListener('mouseenter', (e) =>{
-		document.querySelectorAll('.submenu .contenedor-categorias .imagen').forEach((categoria)=>{
-			categoria.classList.remove('activo');
-			if(categoria.dataset.categoria == e.target.dataset.categoria){
-				categoria.classList.add('activo');
-			}
-		});
-	});
-});
 const navToggle = document.querySelector(".nav-toggle");
 const contenedorOpt = document.querySelector(".contenedor-opt");
 navToggle.addEventListener("click", () => {
 	contenedorOpt.classList.toggle("visible");
+});
+document.querySelectorAll('.laboratorios .menu-secundario .lab').forEach((elemento)=>{
+	elemento.addEventListener('click', (e) =>{
+		document.querySelectorAll('.laboratorios .contenedor-laboratorio').forEach((categoria)=>{
+			categoria.classList.remove('activo');
+			if(categoria.dataset.categoria == e.target.dataset.categoria){
+				catego.classList.add('activo');
+			}
+		});
+	});
 });

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat+Alternates:ital,wght@1,900&family=Montserrat:ital,wght@1,900&display=swap');
+*{
+	margin: 0;
+} 
+body::-webkit-scrollbar{
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+	background: #000;
+	border-radius: 4px;
+}
+.navegacion{
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	transition: 0.7s;
+	height: 70px;
+	z-index: 1000;
+}
+.navegacion .contenedor-opt{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 94%;
+	align-items: center;
+}
+.navegacion .contenedor-opt li a{
+	text-decoration: none;
+	font-size: 1.1em;
+}
+.abajo{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: #001b4e;
+}
+.letracolor{
+	color: #fff;
+}
+.navegacion .contenedor-opt li{
+	padding: 10px;
+}
+.navegacion .enlace-logo{
+	width: 6%;
+	height: 70px;
+	margin-left: 2%;
+}
+.navegacion .enlace-logo .contenedor-img,
+.navegacion .enlace-logo .contenedor-img img{
+	width: 100%;
+	height: 100%;
+}
+.fondoon{
+	background: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.fondooff{
+	background: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraon{
+	color: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraoff{
+	color: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.nav-toggle{
+	display: none;
+	color: blue;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+}
+.contenedor-docentes .docente-titulo{
+	margin-top: 90px;
+	width: 60%;
+	background: #040431;
+	text-align: center;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.8em;
+}
+.contenedor-docentes{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.contenedor-docentes .contenedor-departamento{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 50px;
+	margin-bottom: 50px;
+	grid-gap: 20px;
+}
+.box-docentes{
+	display: flex;
+	background: #040431;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.box-docentes .separacion1{
+	width: 40%;
+	padding: 20px;
+}
+.box-docentes .separacion1 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	border: 2px double #fff;
+}
+.box-docentes .separacion2{
+	width: 60%;
+	padding: 20px;
+}
+.box-docentes .separacion2 div{
+	color: white;
+	font-size: 80%;
+}
+.box-docentes .separacion2 h1{
+	color: #EAB101;
+	font-size: 1.5em;
+}
+footer .datos{
+	display: flex;
+	margin-top: 20px;
+}
+footer .datos .contacto,
+footer .datos .contenedor-ubicacion{
+	width: 50%;
+}
+footer .datos .contacto ul,
+footer .datos .contenedor-ubicacion .ubicacion ul{
+	width: 60%;
+	margin-left: auto;
+	font-size: 1.2em;
+	margin-right: auto;
+}
+footer .datos .contacto .contacto-subtitulo,
+footer .datos .contenedor-ubicacion .ubicacion-subtitulo{
+	text-align: center;
+	background: #040431;
+	color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 70%;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer .datos .contenedor-ubicacion .logo{
+	display: flex;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	margin-top: 20px;
+}
+footer .datos .contenedor-ubicacion .logo h3{
+	font-size: 1.8em;
+	margin-left: 10px;
+	font-family: algerian;
+	text-align: center;
+}
+footer .datos .contenedor-ubicacion .logo img{
+	height: 100px;
+	width: 100px;
+}
+footer .copy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .copy div{
+	margin-left: 10px;
+}
+footer .copy div img{
+	height: 30px;
+	width: 30px;
+}

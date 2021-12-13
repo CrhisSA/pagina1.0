@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat+Alternates:ital,wght@1,900&family=Montserrat:ital,wght@1,900&display=swap');
+*{
+	margin: 0;
+} 
+body::-webkit-scrollbar{
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+	background: #000;
+	border-radius: 4px;
+}
+.navegacion{
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	transition: 0.7s;
+	height: 70px;
+	z-index: 1000;
+}
+.navegacion .contenedor-opt{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 94%;
+	align-items: center;
+}
+.navegacion .contenedor-opt li a{
+	text-decoration: none;
+	font-size: 1.1em;
+}
+.abajo{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: #001b4e;
+}
+.letracolor{
+	color: #fff;
+}
+.navegacion .contenedor-opt li{
+	padding: 10px;
+}
+.navegacion .enlace-logo{
+	width: 6%;
+	height: 70px;
+	margin-left: 2%;
+}
+.navegacion .enlace-logo .contenedor-img,
+.navegacion .enlace-logo .contenedor-img img{
+	width: 100%;
+	height: 100%;
+}
+.fondoon{
+	background: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.fondooff{
+	background: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraon{
+	color: #001b4e;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.letraoff{
+	color: #fff;
+	transition: all 0.5s ease 0s;
+	border-radius: 10px;
+}
+.nav-toggle{
+	display: none;
+	color: blue;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+}
+
+.contenedor-mapa{
+	margin-top: 90px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.1em;
+}
+.contenedor-mapa .contenedor-mapaImg{
+	width: 80%;
+	margin: auto;
+	border: 4px double #040431;
+}
+.contenedor-mapa .contenedor-mapaImg img{
+	width: 100%;
+	height: 100%;
+}
+.aulas{
+	margin-top: 40px;
+	color: #040431;
+}
+.aulas .contenedor-medidas .contenedor-imgAula{
+	width: 80%;
+	margin: auto;
+}
+.aulas .contenedor-medidas .contenedor-imgAula img{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 4px double #040431;
+	margin: 0;
+	border-radius: 20px;
+}
+.aulas .contenedor-medidas{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "medidas contenedor-imgAula";
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.aulas .contenedor-medidas .medidas{
+	padding: 60px;
+}
+.aulas h2{
+	font-size: 1.5em;
+}
+.aulas p{
+	font-size: 1em;
+}
+.aulas .contenedor-aulas{
+	font-size: 1.8em;
+	background: #040431;
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+.contenedor-presentacionLaboratorios .titulo-laboratorio{
+	font-size: 1.8em;
+	background: #040431;
+	width: 75%;
+	text-align: center;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.contenedor-presentacionLaboratorios .concepto-laboratorio{
+	font-size: 1.2em;
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	color: #040431;
+}
+.laboratorios .menu-secundario .lab1,
+.laboratorios .menu-secundario .lab3{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-areas: "labtitulo tabla-equipamiento";
+	background: #040431;
+}
+.laboratorios .menu-secundario .lab1 .labtitulo,
+.laboratorios .menu-secundario .lab3 .labtitulo{
+	color: white;
+	font-size: 130%;
+}
+.laboratorios .menu-secundario .lab2 .labtitulo{
+	color: #040431;
+	font-size: 130%;
+}
+.laboratorios .menu-secundario .lab2{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-areas: "tabla-equipamiento labtitulo";
+}
+.laboratorios .menu-secundario table{
+	background: white;
+}
+.laboratorios .menu-secundario table th{
+	background: #EAB101;
+}
+.laboratorios .menu-secundario table .opt-tabla{
+	text-align: center;
+}
+.menu-secundario .contenedor-laboratorio{
+	align-items: center;
+	padding: 30px;
+}
+.menu-secundario .contenedor-laboratorio .labtitulo{
+	padding: 20px;
+	text-align: center;
+}
+.menu-secundario .contenedor-laboratorio .tabla-equipamiento{
+	width: 90%;
+	margin: auto;
+}
+
+footer .datos{
+	display: flex;
+	margin-top: 20px;
+}
+footer .datos .contacto,
+footer .datos .contenedor-ubicacion{
+	width: 50%;
+}
+footer .datos .contacto ul,
+footer .datos .contenedor-ubicacion .ubicacion ul{
+	width: 60%;
+	margin-left: auto;
+	font-size: 1.2em;
+	margin-right: auto;
+}
+footer .datos .contacto .contacto-subtitulo,
+footer .datos .contenedor-ubicacion .ubicacion-subtitulo{
+	text-align: center;
+	background: #040431;
+	color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 70%;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer .datos .contenedor-ubicacion .logo{
+	display: flex;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	margin-top: 20px;
+}
+footer .datos .contenedor-ubicacion .logo h3{
+	font-size: 1.8em;
+	margin-left: 10px;
+	font-family: algerian;
+	text-align: center;
+}
+footer .datos .contenedor-ubicacion .logo img{
+	height: 100px;
+	width: 100px;
+}
+footer .copy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .copy div{
+	margin-left: 10px;
+}
+footer .copy div img{
+	height: 30px;
+	width: 30px;
+}
